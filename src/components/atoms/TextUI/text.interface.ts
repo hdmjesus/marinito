@@ -1,7 +1,6 @@
-import { ThemeType } from '@/interfaces/theme.interface'
 import { BreakpointSizesType, HtmlTags } from '@/types/base.type'
 
-
+import { ThemeType } from '../../interfaces/theme.interface'
 
 export interface TextProps {
   cn?: string

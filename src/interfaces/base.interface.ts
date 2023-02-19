@@ -14,10 +14,10 @@ export interface IconProps {
   width?: string | number
 }
 
-export type SizeType = 'small' | 'medium' | 'large'
 export type ShapeType = 'square' | 'rounded' | 'pill'
-export type ButtonVariantType = 'text' | 'contained' | 'outlined' | 'borders'
+export type ButtonVariantType = 'text' | 'contained' | 'outlined'
 export type ButtonShapeType = 'square' | 'rounded' | 'half-pill' | 'pill'
+export type ShadownType = 'small' | 'default' | 'large'
 export type BaseColorType =
   | 'primary'
   | 'secondary'

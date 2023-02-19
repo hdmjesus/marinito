@@ -1,6 +1,7 @@
 import React from 'react'
-import { ButtonUIProps } from './buttonui.interface'
+import { MdSearch } from 'react-icons/md'
 
+import { ButtonUIProps } from './buttonui.interface'
 import { ButtonUI } from './index'
 import { Meta, Story } from '@storybook/react'
 
@@ -20,6 +21,13 @@ export const Default = Template.bind({})
 
 Default.args = {
   label: 'Default Button'
+}
+export const Outline = Template.bind({})
+
+Outline.args = {
+  label: 'Default Button',
+  variant: 'outlined',
+  startIcon: <MdSearch size={25} color='#434343' />
 }
 
 export const Secondary = Template.bind({})

@@ -6,7 +6,8 @@ export const TextStyled = styled('h1')<TextProps>`
   text-align: ${({ textAlign }) => textAlign};
   color: ${({ $color: color, theme }) => color && color(theme)};
   text-transform: ${({ textTransform }) => textTransform};
-  font-weight: ${({ fontWeight }) => fontWeight && fontWeight};
+  font-weight: ${({ fontWeight }) => (fontWeight ? fontWeight : 600)};
+  letter-spacing: 0px;
   font-size: ${({ fontSize }) =>
     typeof fontSize === 'number' ? `${fontSize}px` : `${fontSize?.xs}px`};
   line-height: ${({ lineHeight }) => lineHeight && `${lineHeight}px`};

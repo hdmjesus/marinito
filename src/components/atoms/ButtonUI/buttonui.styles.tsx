@@ -25,6 +25,8 @@ export const ButtonContainer = styled.button<ButtonUIProps>`
   color: ${({ theme, variant = 'contained', color = 'primary' }) =>
     variant === 'text'
       ? theme.palette[color].main
+      : variant === 'outlined'
+      ? theme.palette.grey.A100
       : theme.palette.common.white};
   font-weight: 500;
   font-size: ${({ size }) =>
@@ -35,12 +37,12 @@ export const ButtonContainer = styled.button<ButtonUIProps>`
     size == 'small' ? '4px 10px' : size == 'large' ? '8px 22px' : '6px 16px'};
   min-width: 64px;
   text-transform: capitalize;
-  border: ${({ theme, bgLinear, color = 'primary', variant = 'borders' }) =>
-    variant === 'borders'
+  border: ${({ theme, bgLinear, color = 'primary', variant = 'contained' }) =>
+    variant === 'contained'
       ? bgLinear
         ? 'none'
         : `2px solid ${theme.palette[color].main}`
-      : 'none'};
+      : `2px solid ${theme.palette[color].main}`};
   border-radius: ${({ shape }) =>
     shape == 'pill' ? '40px' : shape == 'rounded' ? '4px' : '0px'};
   cursor: pointer;
@@ -62,7 +64,10 @@ export const ButtonContainer = styled.button<ButtonUIProps>`
           : 'transparent'
         : 'transparent'};
 
-    color: ${({ theme }) => theme.palette.common.white};
+    color: ${({ theme, variant }) =>
+      variant === 'outlined'
+        ? theme.palette.grey[800]
+        : theme.palette.common.white};
   }
 
   &:disabled {
@@ -78,9 +83,16 @@ export const ButtonContainer = styled.button<ButtonUIProps>`
 
   .button-startIcon {
     margin-right: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .button-endIcon {
     margin-left: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 `

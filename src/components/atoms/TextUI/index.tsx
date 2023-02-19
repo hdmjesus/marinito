@@ -19,7 +19,7 @@ export const TextUI: React.FC<TextProps> = ({
     if (color) {
       return color(theme)
     } else {
-      return theme.palette.common.black
+      return theme.palette.common.white
     }
   }
 
