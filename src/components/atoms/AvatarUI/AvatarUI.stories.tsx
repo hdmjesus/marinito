@@ -1,5 +1,4 @@
 import React from 'react'
-import { MdSearch } from 'react-icons/md'
 
 import { AvatarProps, AvatarUI } from './index'
 import { Meta, Story } from '@storybook/react'
