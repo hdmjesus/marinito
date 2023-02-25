@@ -30,7 +30,7 @@ export const ButtonContainer = styled.button<ButtonUIProps>`
       : theme.palette.common.white};
   font-weight: 500;
   font-size: ${({ size }) =>
-    size == 'small' ? '0.8125rem' : size == 'large' ? '0.9375rem' : '0.875rem'};
+    size == 'small' ? '12px' : size == 'large' ? '0.9375rem' : '0.875rem'};
   line-height: 1.75;
   letter-spacing: 0.02857em;
   padding: ${({ size }) =>

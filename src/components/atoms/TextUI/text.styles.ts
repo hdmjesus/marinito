@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components'
 import { TextProps } from './text.interface'
 
 export const TextStyled = styled('h1')<TextProps>`
+  margin: 0;
   text-align: ${({ textAlign }) => textAlign};
   color: ${({ $color: color, theme }) => color && color(theme)};
   text-transform: ${({ textTransform }) => textTransform};

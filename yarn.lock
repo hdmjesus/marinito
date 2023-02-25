@@ -9051,6 +9051,11 @@ raw-loader@^4.0.2:
     loader-utils "^2.0.0"
     schema-utils "^3.0.0"
 
+react-cool-img@^1.2.12:
+  version "1.2.12"
+  resolved "https://registry.yarnpkg.com/react-cool-img/-/react-cool-img-1.2.12.tgz#b7a65053d5e234417afeb0791ce650783ebf80db"
+  integrity sha512-HambbjVszVVCNAEps+wReo9znzhgpq/72DCRvz4ahKkubEUV/ij0WH3RCQ37rcAPezhchpH75VutDE/ENgWegA==
+
 react-docgen-typescript@^2.1.1:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/react-docgen-typescript/-/react-docgen-typescript-2.2.2.tgz#4611055e569edc071204aadb20e1c93e1ab1659c"
