@@ -1,8 +1,9 @@
-import { SizeType } from '@/interfaces/base.interface'
+import { BreakpointSizesType, Sizes } from '@/types/base.type'
 
 export interface InputUIProps {
-  getInputFontSize?: (size: SizeType) => string
-  getInputHeight?: (size: SizeType) => string
+  getInputFontSize?: (size: Sizes) => string
+  getInputHeight?: (size: Sizes) => string
+  LabelfontSize?: number | BreakpointSizesType
   hiddenLabel?: boolean
   label?: string
   type?: React.HTMLInputTypeAttribute
@@ -13,7 +14,7 @@ export interface InputUIProps {
   onChange?: React.ChangeEventHandler<HTMLInputElement>
   value?: string | number | readonly string[]
   fullWidth?: boolean
-  size?: SizeType
+  size?: Sizes
   border?: boolean
   iconStart?: React.ReactNode
 }

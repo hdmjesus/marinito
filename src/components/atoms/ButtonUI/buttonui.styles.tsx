@@ -36,7 +36,6 @@ export const ButtonContainer = styled.button<ButtonUIProps>`
   padding: ${({ size }) =>
     size == 'small' ? '4px 10px' : size == 'large' ? '8px 22px' : '6px 16px'};
   min-width: 64px;
-  text-transform: capitalize;
   border: ${({ theme, bgLinear, color = 'primary', variant = 'contained' }) =>
     variant === 'contained'
       ? bgLinear

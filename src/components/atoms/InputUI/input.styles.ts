@@ -9,10 +9,9 @@ export const InputContainer = styled.div<InputUIProps>`
   width: ${({ fullWidth }) => (fullWidth ? '100%' : 'fit-content')};
 
   label {
-    color: ${({ theme }) => theme.palette.grey[600]};
     font-weight: 700;
     font-size: ${({ size = 'medium', getInputFontSize }) =>
-      getInputFontSize(size)};
+      getInputFontSize && getInputFontSize(size)};
   }
 `
 
@@ -22,6 +21,7 @@ export const InputWrapper = styled.div<InputUIProps>`
   align-items: center;
   gap: 4px;
   border-radius: 1000px;
+  padding: 0 10px;
   background-color: ${({ theme }) => theme.palette.common.white};
   height: ${({ size = 'medium', getInputHeight }) =>
     getInputHeight && getInputHeight(size)};
@@ -40,5 +40,10 @@ export const InputWrapper = styled.div<InputUIProps>`
     background-color: transparent;
     width: 100%;
     height: 100%;
+  }
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 `

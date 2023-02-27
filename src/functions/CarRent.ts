@@ -1,7 +1,4 @@
-export const priceTotal = (
-  pricePerDay: number | undefined,
-  days: number | undefined
-) => {
+export const priceTotal = (pricePerDay: number, days: number) => {
   const totalPrice = pricePerDay * days
 
   return totalPrice
