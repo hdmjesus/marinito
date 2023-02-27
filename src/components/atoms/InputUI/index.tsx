@@ -3,7 +3,6 @@ import { useState } from 'react'
 import { InputUIProps } from './input.interface'
 import { InputContainer, InputWrapper } from './input.styles'
 
-import { MdSearch } from 'react-icons/md'
 import { TextUI } from '../TextUI'
 import { Sizes } from '@/types/base.type'
 
@@ -28,7 +27,11 @@ export const InputUI: React.FC<InputUIProps> = ({ ...props }) => {
   }
 
   return (
-    <InputContainer {...props} getInputFontSize={getInputFontSize}>
+    <InputContainer
+      {...props}
+      getInputFontSize={getInputFontSize}
+      style={props.sx}
+    >
       {!props.hiddenLabel && (
         // <label htmlFor={props.id}>{props.label || 'Label'}</label>
         <label htmlFor={props.id}>

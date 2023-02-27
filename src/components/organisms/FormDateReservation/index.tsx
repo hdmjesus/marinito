@@ -20,7 +20,7 @@ export const FormDateReservation: React.FC<FormReservationProps> = ({
         fontWeight={700}
       />
       <InputUI
-        size='large'
+        size='medium'
         label='Fecha de retiro'
         type='date'
         border
@@ -31,7 +31,7 @@ export const FormDateReservation: React.FC<FormReservationProps> = ({
       />
 
       <InputUI
-        size='large'
+        size='medium'
         label='Fecha de entrega'
         type='date'
         border
@@ -42,7 +42,7 @@ export const FormDateReservation: React.FC<FormReservationProps> = ({
       />
 
       <InputUI
-        size='large'
+        size='medium'
         label='Hora de retiro'
         type='time'
         border
@@ -53,7 +53,7 @@ export const FormDateReservation: React.FC<FormReservationProps> = ({
       />
       <InputUI
         placeholder='Hora'
-        size='large'
+        size='medium'
         label='Hora de entrega'
         type='time'
         border
@@ -61,10 +61,11 @@ export const FormDateReservation: React.FC<FormReservationProps> = ({
         name='date'
         LabelfontSize={{ xs: 13 }}
         iconStart={<FaClock color={Theme.palette.grey[400]} />}
+        sx={{ marginBottom: '30px' }}
       />
 
       <ButtonUI
-        sx={{ marginTop: '20px', fontWeight: '700' }}
+        sx={{ fontWeight: '700' }}
         color='secondary'
         label='Hecho'
         onClick={() => {}}

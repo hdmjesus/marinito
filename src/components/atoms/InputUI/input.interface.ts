@@ -3,6 +3,7 @@ import { BreakpointSizesType, Sizes } from '@/types/base.type'
 export interface InputUIProps {
   getInputFontSize?: (size: Sizes) => string
   getInputHeight?: (size: Sizes) => string
+  sx?: React.CSSProperties
   LabelfontSize?: number | BreakpointSizesType
   hiddenLabel?: boolean
   label?: string
