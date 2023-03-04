@@ -6,8 +6,6 @@ export const DetailtCar = styled.div`
   justify-content: space-between;
 `
 
-export const CarFeatures = styled.div``
-
 export const PriceCar = styled.div`
   padding-left: 20px;
   margin: 20px 0;

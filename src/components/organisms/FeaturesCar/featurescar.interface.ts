@@ -1,4 +1,4 @@
 export interface FeaturesCarProps {
-  price?: number
-  daysRent?: number
+  price: number
+  daysRent: number
 }

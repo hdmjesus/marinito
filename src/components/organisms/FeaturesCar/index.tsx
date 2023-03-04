@@ -1,15 +1,11 @@
 import React from 'react'
 
-import { GiGearStickPattern } from 'react-icons/gi'
-
 import { TextUI } from '@/components/atoms/TextUI'
-import { KmIcon } from '@/icons/KmIcon'
-import { BadgeUI } from '@/components/atoms/BadgeUI'
-import { CarClean } from '@/icons/CarClean'
 import { ParagraphUI } from '@/components/atoms/ParagraphUI'
 import { priceTotal } from '@/functions/CarRent'
 import { FeaturesCarProps } from './featurescar.interface'
-import { CarFeatures, DetailtCar, PriceCar } from './fetaurescar.styles'
+import { DetailtCar, PriceCar } from './fetaurescar.styles'
+import { CarFeatures } from '@/components/molecules/CarFeatures'
 
 export const FeaturesCar: React.FC<FeaturesCarProps> = ({
   ...props
@@ -18,39 +14,7 @@ export const FeaturesCar: React.FC<FeaturesCarProps> = ({
 
   return (
     <DetailtCar>
-      <CarFeatures>
-        <BadgeUI
-          $color={theme => theme.palette.common.black}
-          fontSize={{
-            xs: 10
-          }}
-          fontWeight={300}
-          size='small'
-          startIcon={<KmIcon />}
-          text='Kilometros ilimitados'
-        />
-        <BadgeUI
-          $color={theme => theme.palette.common.black}
-          fontSize={{
-            xs: 10
-          }}
-          fontWeight={300}
-          size='small'
-          startIcon={<CarClean />}
-          text='Limpieza profesional'
-        />
-        <BadgeUI
-          $color={theme => theme.palette.common.black}
-          fontSize={{
-            xs: 10
-          }}
-          fontWeight={300}
-          size='small'
-          startIcon={<GiGearStickPattern size={17} />}
-          text='Automatico'
-        />
-      </CarFeatures>
-
+      <CarFeatures />
       <PriceCar>
         <ParagraphUI>
           <TextUI

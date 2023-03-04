@@ -4,7 +4,7 @@ import { Meta, Story } from '@storybook/react'
 import { FormLocationReservation, FormLocationReservationProps } from './index'
 
 const meta: Meta = {
-  title: 'Organisms/FormDateReservation',
+  title: 'Organisms/FormLocationReservation',
   component: FormLocationReservation,
   args: {
     // label: 'Default Value'
@@ -17,6 +17,6 @@ const Template: Story<FormLocationReservationProps> = args => (
   <FormLocationReservation {...args} />
 )
 
-export const FormReservationDate = Template.bind({})
+export const FormReservationLocation = Template.bind({})
 
-FormReservationDate.args = {}
+FormReservationLocation.args = {}
