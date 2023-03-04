@@ -14,13 +14,7 @@ export interface IconProps {
   width?: string | number
 }
 
-export interface DeliveryCarProps {
-  dateDelivery?: string
-  timeDelivery?: string
-}
-
 export type ShapeType = 'square' | 'rounded' | 'pill'
-export type statusCar = 'forRent' | 'rent'
 export type ButtonVariantType = 'text' | 'contained' | 'outlined'
 export type ButtonShapeType = 'square' | 'rounded' | 'half-pill' | 'pill'
 export type ShadownType = 'small' | 'default' | 'large'

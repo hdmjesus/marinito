@@ -1,4 +1,4 @@
-import { statusCar } from '@/interfaces/base.interface'
+import { statusCar } from '@/interfaces/carRent.interface'
 
 export interface CarRentProps {
   image?: string

@@ -3,7 +3,7 @@ import React from 'react'
 import { Reservation, DetailtCar } from './detaillrentcar.styles'
 import { TextUI } from '@/components/atoms/TextUI'
 import { ButtonUI } from '@/components/atoms/ButtonUI'
-import { DeliveryCarProps } from '@/interfaces/base.interface'
+import { DeliveryCarProps } from '@/interfaces/carRent.interface'
 
 export const DetailsRentCar: React.FC<DeliveryCarProps> = ({
   ...props
