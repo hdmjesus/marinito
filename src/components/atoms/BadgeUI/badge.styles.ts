@@ -7,7 +7,7 @@ export const BadgeStyled = styled.div<BadgeProps>`
   align-items: center;
   justify-content: center;
   gap: ${({ gap, startIcon, endIcon }) =>
-    gap ? `${gap}px` : (startIcon || endIcon) && '5px'};
+    gap ? `${gap}px` : (startIcon || endIcon) && '2px'};
   justify-content: center;
   padding: ${({ size }) =>
     size === 'small' ? '4px 8px' : size === 'large' ? '8px 22px' : '0px'};
