@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 import styled, { css } from 'styled-components'
 
-import { LinkUIProps, LinkOffProps } from './link.interface'
+import { LinkUIProps } from './link.interface'
 
 export const LinkContainer = styled(Link)<Omit<LinkUIProps, 'onClick'>>`
   color: ${({ theme, $textColor: textColor }) => textColor && textColor(theme)};
