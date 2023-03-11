@@ -14,4 +14,7 @@ const FiltersWrapper = styled.section`
   display: flex;
   flex-direction: column;
   gap: 10px;
+  width: 100vw;
+  overflow-x: hidden;
+  padding-left: 10px;
 `
